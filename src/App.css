@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
 
+:root {
+  --color1: #525B44;
+  --color2: #5A6C57;
+  --color3: #85A98F;
+  --color35: #95ba9f;
+  --color4: #D3F1DF;
+}
+
 .radley-regular {
   font-family: "Radley", serif;
   font-weight: 400;
@@ -8,19 +16,64 @@
 
 body{
   font-family: "Radley", serif;
+  background-color: var(--color2);
+  color: var(--color4)
+}
+
+.color1{
+  color: var(--color1)
+}
+
+.color2{
+  color: var(--color2)
+}
+
+.color3{
+  color: var(--color3)
+}
+
+.color35{
+  color: var(--color35  )
+}
+
+.color4{
+  color: var(--color4)
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+
+.mainDetails{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .mainContainer1{
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  align-items: center;
+  align-items: center ;
+  padding-left: 50px;
+  padding-right: 50px;
+
 }
 
 .profileimage{
   border-radius: 100%;
   width: 20%;
   margin-top: 20px;
+}
+
+.mainH2{
+  font-size: 80px;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
