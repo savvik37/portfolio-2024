@@ -4,8 +4,13 @@
   --color1: #525B44;
   --color2: #5A6C57;
   --color3: #85A98F;
-  --color35: #95ba9f;
+  --color35: #a4caae;
   --color4: #D3F1DF;
+}
+
+.pee{
+  font-size: xx-large;
+  margin-top: 30px;
 }
 
 .radley-regular {
@@ -48,32 +53,96 @@ body{
   width: 100vw;
 }
 
+.navbar p {
+  padding: 0px 5px 0px 5px;
+  font-size: x-large;
+  cursor: pointer;
+  color: var(--color4); /* Default color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.navp:hover{
+  background-color: var(--color1);
+  transition: 0.3s;
+}
+
+
 .mainDetails{
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-left: 30px;
 }
 
 .mainContainer1{
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center ;
-  padding-left: 50px;
-  padding-right: 50px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start ;
 
 }
 
 .profileimage{
   border-radius: 100%;
-  width: 20%;
   margin-top: 20px;
+  width: 95%;
+}
+
+.imageDiv{
+  margin: auto;
+  padding-right: 30px;
+}
+
+.h2Smaller{
+  font-size: 70px;
+}
+
+.h2Larger{
+  font-size: 80px;
+}
+
+.mybutton{
+  font-family: "Radley", serif;
+  border: solid 1px var(--color35);
+  padding: 0px 5px 0px 5px;
+  font-size: xx-large;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--color4);
+  transition: 0.3s;
+}
+
+.mybutton:hover{
+  border: solid 1px var(--color3);
+  background-color: var(--color3);
+  color: white;
+  transition: 0.3s;
 }
 
 .mainH2{
-  font-size: 80px;
-  margin: 0;
-  padding: 0;
+  line-height: 69px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.mainButtons{
+  display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ml-10{
+  margin-left: 30px;
+}
+
+.mr-10{
+  margin-right: 30px;
+}
+
+.mainComponent{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 80vh;
 }
 
 .App {
