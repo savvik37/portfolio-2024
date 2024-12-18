@@ -9,7 +9,10 @@ export default function About() {
                 <p class="clp" >email: savvikopikovs@yahoo.com</p>
             </a>
             <a href="https://github.com/savvik37" target="_blank" rel="noopener noreferrer" class="contactLink">
-                <p class="clp">GITHUB</p>
+                <p class="clp">Github</p>
+            </a>
+            <a href="https://www.linkedin.com/in/savvik-opikovs-bsc-68b069151/" target="_blank" rel="noopener noreferrer" class="contactLink">
+                <p class="clp">Linked In</p>
             </a>
         </div>
     </div>
