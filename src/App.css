@@ -6,6 +6,7 @@
   --color3: #85A98F;
   --color35: #a4caae;
   --color4: #D3F1DF;
+  --color5: #9ab8ff;
 }
 
 .pee{
@@ -22,7 +23,24 @@
 body{
   font-family: "Radley", serif;
   background-color: var(--color2);
-  color: var(--color4)
+  color: var(--color4);
+  text-decoration: none;
+}
+
+.animated{
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
 
 .color1{
@@ -51,14 +69,105 @@ body{
   justify-content: space-around;
   align-items: center;
   width: 100vw;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+.projectsComponent{
+  padding: 0px 100px 0px 100px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.projectBox{
+  border-radius: 30px;
+  background-color: var(--color1);
+  padding: 20px;
+}
+
+.projectLink{
+  padding: 0px 10px 0px 10px;
+  color: var(--color1);
+  font-weight: 900;
+  font-size: large;
+  transition: 0.3s;  
+}
+
+.projectLink:hover{
+  color: var(--color4)
+}
+
+.linkImage{
+  filter: invert(42%) sepia(19%) saturate(413%) hue-rotate(65deg) brightness(89%) contrast(86%);
+  width: 15px;
+  height: auto;
+  transition: 0.3s;
+}
+
+.linkImage:hover{
+  filter: invert(97%) sepia(6%) saturate(794%) hue-rotate(74deg) brightness(100%) contrast(90%);
+  transition: 0.3s;
+}
+
+.projectDetail{
+  color: var(--color4);
+}
+
+.imageBox{
+  display: flex;
+  margin: auto;
+  width: fit-content;
+  justify-content: space-around;
+}
+
+.projectImage{
+  width: 30%;
+  border-radius: 7px;
+}
+
+.projectLinkBox{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 25px;
+  background-color: var(--color35);
+  padding: 0px 10px 0px 10px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.projectLinkBox:hover{
+  background-color: var(--color2);
+  color: white;
+  transition: 0.3s;  
+}
+
+.projectLinkBox:hover .linkImage{
+  filter: invert(97%) sepia(6%) saturate(794%) hue-rotate(74deg) brightness(100%) contrast(90%);
+  transition: 0.3s;
+}
+
+.projectLinkBox:hover .projectLink{
+  color: var(--color4)
+}
+
+.projectsH2container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar p {
   padding: 0px 5px 0px 5px;
   font-size: x-large;
   cursor: pointer;
-  color: var(--color4); /* Default color */
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  color: var(--color4);
+  transition: color 0.3s ease;
 }
 
 .navp:hover{
@@ -149,37 +258,82 @@ body{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.aboutComponent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.aboutBox{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contactLink{
+  color: var(--color4);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contactLink:hover .clp{
+  background-color: var(--color35);
+  color: var(--color1);
+  transition: 0.3s;
+}
+
+.contactLink p{
+ margin: 10px;
+ background-color: var(--color1);
+ padding: 0px 10px 0px 10px;
+ transition: 0.3s;
+}
+
+@media only screen and (max-width: 700px) {
+  .mainComponent{
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+
+  .mainDetails{
+    align-items: center;
+    padding: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mainH2{
+    margin-top: 5px;
+    line-height: 35px;
+  }
+
+  .h2Smaller{
+    font-size: 2em;
+  }
+  
+  .h2Larger{
+    font-size: 3em;
+  }
+
+  .pee{
+    text-align: center;
+  }
+
+  .mainButtons{
+    width: 100vw;
+  }
+
+  .imageDiv{
+    display: flex;
+    padding: 0;
+    width: fit-content;
+    justify-content: center;
+  }
+
+  .projectsComponent{
+    padding: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .aboutBox{
+    font-size: larger;
   }
 }
