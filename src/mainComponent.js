@@ -22,7 +22,7 @@ export default function MainComponent() {
           </div>
       </div>
       <div class="imageDiv">
-        <img src="https://avatars.githubusercontent.com/u/59495444?v=4" alt='image of my face' class="profileimage"></img>
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEt2uMvz-5_QQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725369802012?e=1740009600&v=beta&t=5JoDu8sXMiS81qaE5CbK0tpgKEAHnRj09X-AGmHyXCM" alt='image of my face' class="profileimage"></img>
       </div>
     </div>
   )
