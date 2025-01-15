@@ -366,3 +366,38 @@ a{
     width: 200px;
   }
 }
+
+.badgeContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.badgeBox{
+  margin-right: 10px;
+  margin-bottom: 0px;
+  padding: 5px;
+}
+
+.reactBadge{
+  background-color: rgb(16, 56, 107);
+  border-radius: 5px;
+}
+
+.nodeBadge{
+  background-color: #52b640;
+  border-radius: 5px;
+  color: white;
+}
+
+.phpBadge{
+  background-color: #9892eb;
+  border-radius: 5px;
+  color: white;
+}
+
+.jsBadge{
+  background-color: #ec6810;
+  border-radius: 5px;
+  color: white;
+}
